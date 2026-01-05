@@ -21,13 +21,12 @@ app = FastAPI(lifespan=lifespan) #created fast api application with database
 
 #fast api is asynchronous by default
 
-@app.post("/upload") #making a new post
+@app.post("/upload")
 async def upload_file(
-    file: UploadFile = File(...),
-    caption: str = Form(""),
-    session: AsyncSession = Depends(get_async_session)
+        file: UploadFile = File(...),
+        caption: str = Form(""),
+        session: AsyncSession = Depends(get_async_session)
 ):
-
     temp_file_path = None
 
     try:
@@ -62,17 +61,6 @@ async def upload_file(
         if temp_file_path and os.path.exists(temp_file_path):
             os.unlink(temp_file_path)
         file.file.close()
-    #create the object
-    post = Post(
-        caption = caption,
-        url = "dummyurl",
-        file_type = "photo",
-        file_name = "dummyfile_name"
-    )
-    session.add(post) #add the object to the database session (staging it),ready to be added
-    await session.commit() #commit the session
-    await session.refresh(post)
-    return post
 
 @app.get("/feed")
 async def get_feed(
@@ -98,7 +86,7 @@ async def delete_post(post_id: str, session: AsyncSession = Depends(get_async_se
     try:
         post_uuid = uuid.UUID(post_id)
 
-        result = await session.execute(select(Post).where(Post.id == post_uuid))
+        result = await session.execute(select(Post).where(Post.id == post_id))
         post = result.scalars().first()
 
         if not post:
