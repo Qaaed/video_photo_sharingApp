@@ -16,7 +16,12 @@ A modern, full-stack cloud storage and media sharing platform built with **FastA
 <br>
 <img width="1918" height="906" alt="image" src="https://github.com/user-attachments/assets/fa4f725a-f3d8-47c4-b4e3-a8bf48738b7b" />
 <br>
+<img width="1915" height="908" alt="image" src="https://github.com/user-attachments/assets/ecb8a609-76b6-4cef-be28-8b38d9c3917c" />
+<br>
 <img width="1919" height="699" alt="image" src="https://github.com/user-attachments/assets/d254f0d7-7fe0-42a6-9a71-a302572877d3" />
+<br>
+
+
 
 ---
 
