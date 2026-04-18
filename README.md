@@ -279,31 +279,9 @@ curl -X GET "http://localhost:8000/feed" \
 
 **Solution**: Logout and login again to get a new token
 
-## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- [FastAPI](https://fastapi.tiangolo.com/) - Modern Python web framework
-- [Streamlit](https://streamlit.io/) - Rapid app development
-- [ImageKit](https://imagekit.io/) - Cloud image/video platform
-- [FastAPI-Users](https://github.com/frankie567/fastapi-users) - User management extension
-
-## 📧 Support
-
-For support, email support@cloudshare.dev or open an issue on GitHub.
 
 ---
 
-**Made with ❤️ by CloudShare Team**
