@@ -1,4 +1,4 @@
-# ☁️ CloudShare REST API
+# CloudShare REST API
 
 [![Python](https://img.shields.io/badge/Python-3.13+-3776ab.svg?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.118+-009688.svg?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
@@ -25,7 +25,7 @@ A modern, full-stack cloud storage and media sharing platform built with **FastA
 
 ---
 
-## 🚀 Features
+## Features
 
 - **JWT Authentication** — Secure register/login flow using FastAPI Users with bcrypt + argon2 password hashing
 - **Media Uploads** — Support for images (PNG, JPG, JPEG) and videos (MP4, AVI, MOV, MKV, WEBM)
@@ -38,7 +38,7 @@ A modern, full-stack cloud storage and media sharing platform built with **FastA
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 | Library | Purpose |
@@ -66,7 +66,7 @@ A modern, full-stack cloud storage and media sharing platform built with **FastA
 
 ---
 
-## 🏗️ Why SQLAlchemy?
+##  Why SQLAlchemy?
 
 SQLAlchemy is the gold standard ORM for Python, and using it here — even with SQLite — was a deliberate choice for several reasons:
 
@@ -105,7 +105,7 @@ The rest of the application is untouched.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 cloudshare-rest-api/
@@ -125,7 +125,7 @@ cloudshare-rest-api/
 
 ---
 
-## 💾 Database Schema
+## Database Schema
 
 ```sql
 CREATE TABLE "user" (
@@ -150,7 +150,7 @@ CREATE TABLE posts (
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python **3.13+**
 - A free [ImageKit.io](https://imagekit.io/) account
@@ -191,7 +191,7 @@ IMAGEKIT_URL=https://ik.imagekit.io/your_endpoint
 
 ---
 
-## ▶️ Running the App
+## Running the App
 
 ### Start the backend (FastAPI)
 
@@ -218,7 +218,7 @@ The UI opens at **http://localhost:8501**
 
 ---
 
-## 📚 API Reference
+## API Reference
 
 ### Authentication
 
@@ -239,7 +239,7 @@ The UI opens at **http://localhost:8501**
 
 ---
 
-## 🔐 Authentication Flow
+##  Authentication Flow
 
 ```
 User registers  →  Password hashed (argon2/bcrypt)  →  Stored in DB
@@ -257,7 +257,7 @@ The JWT secret lives in `app/users.py`. **Change this to a strong random value b
 
 ---
 
-## 🖼️ ImageKit Integration
+##  ImageKit Integration
 
 Uploaded files are streamed to ImageKit's CDN via the Python SDK. The returned CDN URL is saved to the database and served directly to clients — the application server never stores binary files.
 
@@ -303,7 +303,7 @@ curl -X POST http://localhost:8000/upload \
 
 ---
 
-## 🚨 Troubleshooting
+## Troubleshooting
 
 | Problem | Fix |
 |---|---|
