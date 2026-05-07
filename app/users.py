@@ -11,6 +11,7 @@ from fastapi_users.db import SQLAlchemyUserDatabase
 from app.db import User, get_user_db
 
 # Secret key for JWT token signing (should be stored in environment variable in production)
+# QAAED THIS SECRET KEY IS NOT ALL THAT OF A SECRET IS IT?
 SECRET = "sakjdhkjad872323"
 
 
